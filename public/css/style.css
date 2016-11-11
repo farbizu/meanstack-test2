@@ -1,0 +1,91 @@
+.body-color {
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.header {
+    padding: 2px 12px;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.white {
+    margin-top: 15%;
+    background-color: white;
+    width: 50%;
+    padding-left: 3px;
+    color: #A1A4A6;
+}
+
+.top {
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.login-button {
+    background-color: white;
+    border-radius: 0px;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.align-right {
+    position: absolute;
+    margin-left: 80%;
+    color: #A1A4A6;
+    padding-top: 1%;
+}
+
+.logout {
+    color: #A1A4A6;
+    cursor: pointer;
+}
+
+.container-list {
+    margin-top: 6%;
+}
+
+.course-list {
+    border-color: #A1A4A6;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: #A1A4A6;
+    font-size: 14px;
+}
+
+.link-details {
+    margin-left: 60%;
+    color: #A1A4A6;
+    cursor: pointer;
+    
+}
+
+.code-left {
+    margin-right: 5%;
+}
+
+.course-description {
+    border-color: #A1A4A6;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: #A1A4A6;
+}
+
+.launch-link {
+    margin-left: 90%;
+    color: #A1A4A6;
+    cursor: pointer;
+}
+
+.hidden {
+    display:none;
+}
+
+.visible{
+    display:block;
+}

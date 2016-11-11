@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>MEAN Stack Test</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Bootstrap compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--ANGULAR-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="../js/controller/controller.js">
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body class="body-color" ng-controller="AppCtrl">
+    <div class="header">
+        <h1>MEAN Stack Test</h1>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row" ng-init="userData()">
+
+            <div class="col-md-12 align-right">
+                {{fname}} {{lname}} {{username}} <a href="{{logout}} " ng-click="logout()" class="logout">logout</a>
+            </div>
+
+        </div>
+
+        <div class="container-list col-md-6 col-md-offset-3" ng-init="listaCursos()">
+
+            <div ng-repeat="curso in listaCursos">
+
+                <div class="course-list"   ng-click="desplegar(curso.code)">
+                    <strong class="code-left">{{curso.code}}</strong>{{curso.name}} <a class="link-details">details</a>
+
+                </div>
+
+                <div class="course-description  col-md-offset-1" id="curso.code" ng-show="{{descripcion}}">
+                    {{curso.description}}
+
+                    <div><a class="launch-link">launch</a></div>
+                </div>
+                <div> </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
