@@ -41,20 +41,19 @@
 
         <div class="container-list col-md-6 col-md-offset-3" ng-init="listaCursos()">
 
-            <div ng-repeat="curso in listaCursos">
+            <div ng-repeat="curso in listaCursos" ng-init="esconde()">
 
                 <div class="course-list"   ng-click="desplegar(curso.code)">
                     <strong class="code-left">{{curso.code}}</strong>{{curso.name}} <a class="link-details">details</a>
 
                 </div>
 
-                <div class="course-description  col-md-offset-1" id="curso.code" ng-show="{{descripcion}}">
+                <div class="course-description  col-md-offset-1" id="{{curso.code}}" style="display:none;">
                     {{curso.description}}
 
-                    <div><a class="launch-link">launch</a></div>
+                    <div><a class="launch-link" ng-href="../{{curso.launch}}" target="_blank">launch</a></div>
                 </div>
-                <div> </div>
-
+                
             </div>
 
         </div>
