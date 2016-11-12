@@ -90,8 +90,20 @@
 @media only screen and (max-width: 991px) {
   
     .white{
-    margin-left: 25%
-       width: 50%;
+    margin-left: 25%;
+    width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 468px) {
+  
+    .white{
+    margin-left: 20%;
+    width: 50px;
+    }
+    .login-button{
+        width: 50%
     }
     
 }
