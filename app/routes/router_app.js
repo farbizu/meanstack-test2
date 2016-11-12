@@ -37,7 +37,7 @@ router.get("/logout", function (req, res) {
 
 router.get("/listaCursos",function(req,res){
     
-    courses.find({},function(err,data){
+    courses.find({users:req.session.user},function(err,data){
         
         if(data != null){
             res.json(data);

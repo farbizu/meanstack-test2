@@ -15,6 +15,7 @@
     background-color: white;
     width: 50%;
     padding-left: 3px;
+    padding-top: 1%;
     color: #A1A4A6;
 }
 
@@ -25,11 +26,7 @@
 
 .login-button {
     background-color: white;
-    border-radius: 0px;
-}
-
-.square {
-    border-radius: 0;
+    width: 75%;
 }
 
 .align-right {
@@ -55,6 +52,9 @@
     border-width: 1px;
     color: #A1A4A6;
     font-size: 14px;
+    margin-top: 4%;
+    height: 35px;
+    padding-top: 5px;
 }
 
 .link-details {
@@ -74,18 +74,24 @@
     border-style: solid;
     border-width: 1px;
     color: #A1A4A6;
+   
 }
 
 .launch-link {
-    margin-left: 90%;
+    margin-left: 86%;
     color: #A1A4A6;
     cursor: pointer;
 }
 
-.hidden {
-    display:none;
+.user-input{
+    width: 60px:
 }
 
-.visible{
-    display:block;
+@media only screen and (max-width: 991px) {
+  
+    .white{
+    margin-left: 25%
+       width: 50%;
+    }
+    
 }
